@@ -1,0 +1,33 @@
+//Hatebot chatbot script
+var arndNum1 = ((Math.random() * 17)+1);
+var result1 = parseInt(arndNum1);
+var arndNum2 = ((Math.random() * 14)+1);
+var result2 = parseInt(arndNum2);
+var arndNum3 = ((Math.random() * 12)+1);
+var result3 = parseInt(arndNum3);
+var arndNum4 = ((Math.random() * 10)+1);
+var result4 = parseInt(arndNum4);
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+const greet = ["Fuck you", "You're a liar", "Just Shut Up!", "Stop Lying!", "Mother Fucker","You dumb fucking piece of fucking shit.", "You dumb fucking lying piece of fucking shit.", "Listen motherfucker.", "You fucking idiot", "Now go fuck yourself. ", "Fucking idiot" ,"One of the most prominent shitbag motherfucking liars at this site posting his usual shitbag motherfucking bullshit." , "Nobody gives a fuck what you are proud about, bitch boy." , "Listen you stupid motherfucker" , "Well, allow me to introduce you to a space called reality."];
+
+const techno = ["You are a fucking joke.", "You suck all the time too.", "You have been a total fucking waste of flesh and blood. ", "You need to just go away", "But, shut the fuck up, you cunt.", "The only point you have ever had in the history of your participation at this forum is the top of your fucking head, you goddamn fucking idiot", "Just GTFO the goddamn board. ", "Now go fuck yourself. ", " lying piece of crap", "Get the fuck off the board with your fucking bullshit", "Both of you just shut the fuck up with your bullshit.", "Go fuck yourself", "Goddamn idiot." , "So all you fucking idiot poofs can go fuck yourselves." , "Go fuck yourself, you cocksucking lying motherfucking idiot." , "The amount of mental reservation and equivocation in your posts cements the fact you are quite evidently the worst."];
+
+const entryrank = ["You know you're wrong", "All around you know you are wrong", "Nobody, including me, gives a flying fuck about what you feel", "Make no mistake, the problem was you, is you, and will be you as long as you remain here", "Start with pounding sand in your ass", "fuckface", "I assure you that you are the biggest fucking idiot here", "Fuck you too, you fucking liar.", "you lie to me every day", "You are one, dumb cocksucker for sure", "You don't understand shit." , "Your world consists of the unwashed, brainless, weak-minded, and ineffectual low-life transients, who are nobodies to begin with." , "Don't fucking keep lying."];
+
+const goodbye = ["You will pay the piper.", "goddamn fucking idiot...", "Classic idiotic goddamn Canadian fuckhead." , "Weak and ineffective." , "Shameful." , "Let the hunt begin." , "Fuck you." , "Period." , "Sick bastard." , "Classic liberalism!" , "Goddamn top-rate idiot in operation" , "Very weak and satisfyingly telling of your true natures." , "Your argumentation is weak." , "Weak ass motherfuckers can't handle reality." , "No one wants you here." , "Noted." , "Progressives are a lost cause." , "A nutpicker like the rest, uh..." , "You do not have any idea."]
+
+
+let greetchoice = greet[result1];
+let entrychoice = entryrank[result3]
+let talkchoice = techno[result2];
+let goodbyechoice = goodbye[result3]
+
+console.log(greetchoice, entrychoice, talkchoice);
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+sleep(2000).then(() => console.log(goodbyechoice) );
